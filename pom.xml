@@ -41,6 +41,10 @@
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
 			<configuration>
+				<forkMode>always</forkMode>
+				<environmentVariables>
+					<IASTAGENT_LOGGING_STDERR_LEVEL>info</IASTAGENT_LOGGING_STDERR_LEVEL>
+				 </environmentVariables>
 				<argLine>-agentpath:${env.PWD}/libagent_linux64.so</argLine>
 			</configuration>
 		</plugin>
