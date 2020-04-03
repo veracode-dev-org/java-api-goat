@@ -44,6 +44,9 @@
 				<forkMode>always</forkMode>
 				<environmentVariables>
 					<IASTAGENT_LOGGING_STDERR_LEVEL>info</IASTAGENT_LOGGING_STDERR_LEVEL>
+					<IASTAGENT_LOGGING_FILE_ENABLED>true</IASTAGENT_LOGGING_FILE_ENABLED>
+					<IASTAGENT_LOGGING_FILE_PATHNAME>./iast.log</IASTAGENT_LOGGING_FILE_PATHNAME>
+					<IASTAGENT_LOGGING_FILE_LEVEL>info</IASTAGENT_LOGGING_FILE_LEVEL>
 				 </environmentVariables>
 				<argLine>-agentpath:${env.PWD}/libagent_linux64.so</argLine>
 			</configuration>
